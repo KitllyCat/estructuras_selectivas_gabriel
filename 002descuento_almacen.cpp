@@ -11,6 +11,10 @@ int main() {
     cin >> compra;
     
 	descuento = compra * 0.2;
+	if (compra <= 0){
+		cout << "El monto debe ser mayor a 0";
+		return 1;
+	}
 	if (compra > 1000){
 		total = compra - descuento;
 		cout << "\nEntonces el total a pagar sera: S/." << total << endl;
