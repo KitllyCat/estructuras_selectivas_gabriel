@@ -13,6 +13,10 @@ int main() {
     cout << "Ingrese su edad: ";
     cin >> edad;
 
+    if (edad <= 0) {
+        cout << "La edad tiene que ser mayor a 0" << endl;
+        return 1;
+    }
     if (sexo == 'F' || sexo == 'f'){
         pulsaciones = (220 - edad) / 10;
     }else{
