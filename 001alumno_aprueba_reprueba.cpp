@@ -1,7 +1,8 @@
 #include <iostream>
-#include <windows.h>
 using namespace std;
+
 //PROGRAMA PARA DETERMINAR SI UN ALUMNO APRUEBA O REPRUEBA SEGÚN SU PROMEDIO DE 3 CALIFICACIONES
+
 int main(){
 	SetConsoleOutputCP(CP_UTF8);
     float calificacion, promedio = 0;
@@ -22,5 +23,6 @@ int main(){
     }else{
         cout<<"Reprobado con el promedio de: "<<promedio;
     }
+    
     return 0;
 }
